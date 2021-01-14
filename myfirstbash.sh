@@ -8,7 +8,7 @@ read -p "Enter source url: " source_file
       echo "3: quit"
       read -sn1
       case "$REPLY" in
-        1) echo "$source_file"|rev;;
+        1) echo "$source_file" | rev;;
         2) echo "${#source_file}";;
         3) exit 0;;
         *) echo "Selection not recognized, please choose again";;
